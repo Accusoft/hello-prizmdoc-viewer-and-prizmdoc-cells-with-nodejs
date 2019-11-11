@@ -1,0 +1,11 @@
+{
+  // ========== PrizmDoc Cloud (Accusoft-hosted PAS and PrizmDoc Cells Server) ==========
+  "pasBaseUrl":         "https://api.accusoft.com/prizmdoc",
+  "cellsServerBaseUrl": "https://api.accusoft.com/cells",
+  "apiKey":             "YOUR_API_KEY", // Get an API key for free at https://cloud.accusoft.com
+
+  // ========== Self-hosted ==========
+  // "pasBaseUrl":         "YOUR_PAS_BASE_URL",
+  // "pasSecretKey":       "YOUR_PAS_SECRET_KEY", // The "secretKey" value defined in your PAS config file.
+  // "cellsServerBaseUrl": "YOUR_CELLS_SERVER_BASE_URL"
+}
