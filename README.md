@@ -88,7 +88,7 @@ You should see output like this:
 [HPM] Proxy created: /pas-proxy  ->  https://api.accusoft.com/prizmdoc
 [HPM] Proxy rewrite rule created: "^/pas-proxy" ~> ""
 [HPM] Subscribed to http-proxy events:  [ 'error', 'close' ]
-[HPM] Proxy created: /cells-server-proxy  ->  https://api.accusoft.com/cells
+[HPM] Proxy created: /cells-server-proxy/clientControl  ->  https://api.accusoft.com/cells
 [HPM] Proxy rewrite rule created: "^/cells-server-proxy" ~> ""
 [HPM] Subscribed to http-proxy events:  [ 'error', 'close' ]
 Application running at http://localhost:8888

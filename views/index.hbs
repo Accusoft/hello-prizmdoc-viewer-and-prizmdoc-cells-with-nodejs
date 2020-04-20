@@ -24,7 +24,7 @@
     <script src="viewer-assets/js/viewerCustomizations.js"></script>
 
     <!-- Make the Accusoft.WorkbookControl API available -->
-    <script src="/cells-server-proxy/interface.js"></script>
+    <script src="/cells-server-proxy/clientControl/interface.js"></script>
 
     <!-- Create the viewer inside of the "documentContainer" div, and initialize it with the session ID  -->
     <script type="text/javascript">
@@ -252,7 +252,7 @@
         To get workbook data, the Workbook Control makes requests to the PrizmDoc
         Cells Server <i>through your web application</i> (or web server). That's
         why this web application defines a proxy route to PrizmDoc Cells at
-        <code>cells-server-proxy/</code> (see <code>app.js</code> and
+        <code>cells-server-proxy/clientControl/</code> (see <code>app.js</code> and
         <code>cells/createProxyRouteToCellsServer.js</code>). If you look at the network
         traffic in dev tools, you'll see the requests made by the Workbook Control
         for resources rooted at this path.

@@ -15,7 +15,7 @@ function createProxyRouteToCellsServer(path, cellsServerBaseUrl, apiKey) {
   }
 
   let pathRewrite = {};
-  pathRewrite['^' + path] = ''; // remove the proxy path part of the route when forwarding the request
+  pathRewrite['^/cells-server-proxy'] = ''; // remove the proxy path part of the route when forwarding the request
   let headers = {};
 
   if (apiKey !== undefined) {

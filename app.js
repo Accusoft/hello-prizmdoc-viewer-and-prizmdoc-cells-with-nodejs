@@ -26,11 +26,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(createProxyRouteToPAS('/pas-proxy', config.pasBaseUrl, config.apiKey));
 
 // Setup the proxy to the PrizmDoc Cells Server. The WorkbookControl will send
-// all of its requests for workbook data to the /cells-server-proxy route and
-// the proxy will forward those requests on to the PrizmDoc Cells Server. If you
-// are using PrizmDoc Cloud, the proxy will also inject your API key before
+// all of its requests for workbook data to the /cells-server-proxy/clientControl
+// route and the proxy will forward those requests on to the PrizmDoc Cells Server.
+// If you are using PrizmDoc Cloud, the proxy will also inject your API key before
 // forwarding the request.
-app.use(createProxyRouteToCellsServer('/cells-server-proxy', config.cellsServerBaseUrl, config.apiKey));
+app.use(createProxyRouteToCellsServer('/cells-server-proxy/clientControl', config.cellsServerBaseUrl, config.apiKey));
 
 // Register the default route
 app.use('/', indexRouter);
