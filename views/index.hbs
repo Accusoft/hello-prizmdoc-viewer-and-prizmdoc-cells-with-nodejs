@@ -53,12 +53,9 @@
           $('#cellsInfo').show();
           $('#cellsSessionId').text('"' + cellsSessionId + '"');
 
-          const workbookControl = new Accusoft.WorkbookControl({
-            baseUrl:  'cells-server-proxy',
-            sessionId: cellsSessionId
-          });
-
-          workbookControl.embed({
+          Accusoft.WorkbookControl.create({
+            baseUrl: 'cells-server-proxy',
+            sessionId: cellsSessionId,
             container: document.getElementById('documentContainer')
           });
         };
