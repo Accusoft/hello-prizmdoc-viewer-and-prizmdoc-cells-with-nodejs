@@ -8,10 +8,6 @@
     "prestart": "node check-node-version.js",
     "start": "node main.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@git.jpg.com:acooper/hello-prizmdoc-viewer-and-prizmdoc-cells-with-nodejs.git"
-  },
   "license": "MIT",
   "dependencies": {
     "express": "~4.16.4",
